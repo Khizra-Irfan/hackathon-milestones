@@ -1,91 +1,138 @@
-/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;   
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 150px;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 80px 20px;
 }
 
 .resume-container {
-    display: flex;
-    background-color: white;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  background-color: white;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* Keeps the existing shadow */
 }
 
-/* Left Section Styling */
 .left-section {
-    background-color: #2c2c2c;
-    color: white;
-    padding: 20px;
-    width: 35%;
-    text-align: center;
-    border-right: 5px solid #e63946;
-    margin-bottom: 20px;
+  background-color: #1e293b;
+  color: white;
+  padding: 40px;
+  width: 35%;
+  text-align: center;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added shadow to the left section */
 }
 
 .right-section {
-    padding: 20px;
-    width: 65%;
-    text-align: left;
-}
-
-.personal-information {
-    margin-bottom: 10px;
-}
-
-p {
-    text-align: left;
+  background-color: #f8fafc;
+  color: #334155;
+  padding: 40px;
+  width: 65%;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added shadow to the right section */
 }
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
-    margin-top: 10%;
-    border-radius: 50%;
-    border: 5px solid #e63946;
-    margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #e63946;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Added shadow to the profile picture */
 }
 
 h1 {
-    font-size: 24px;
-    margin: 10px 0;
-    margin-bottom: 30px;
-    text-align: center;
+  font-size: 28px;
+  margin: 10px 0;
+  margin-bottom: 30px;
+  color: #0f172a;
 }
 
 h3 {
-    font-size: 18px;
-    padding: 2%;
-    margin: 20px 0 10px;
-    color: black;
-    border-radius: 10px;
-    box-shadow: 0 0 15px #e63946;
-    margin-top: 5%;
-    margin-bottom: 5%;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin: 25px 0 15px;
+  color: white;
+  background-color: #475569;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Shadow around the background */
+  text-transform: uppercase; /* Makes text bold and all caps for a more professional look */
+  letter-spacing: 2px; /* Adds spacing between letters for a modern look */
+  background: linear-gradient(45deg, #475569, #6b7b8c); /* Subtle gradient background */
+  font-weight: bold; /* Makes the font bold */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+h3:hover {
+  background-color: #2c3e50; /* Darker background on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Stronger shadow effect on hover */
+  transform: translateY(-5px); /* Slightly lift the element on hover */
+  color: #f1c40f; /* Change text color on hover for contrast */
+  letter-spacing: 4px; /* Increase letter spacing when hovered */
+}
+
+
+
+p,
+ul {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
 }
 
 ul {
-    list-style-type: fill round;
-    padding: 10;
-    margin: 10px 0;
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 ul li {
-    margin: 5px 0;
+  margin: 8px 0;
+}
+
+a {
+  color: #e63946;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #c92239;
 }
 
 button {
-    font-family: Arial, sans-serif;
-    border-radius: 10px;
-    box-shadow: 0 0 15px black;
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 10px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #475569;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow to the button */
 }
 
 button:hover {
-    background-color: #ff737c;
+  background-color: #64748b;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+.section-content {
+  margin-bottom: 30px;
 }
